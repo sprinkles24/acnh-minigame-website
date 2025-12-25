@@ -26,3 +26,6 @@ function findingDaysIcon() {
 
 const linkToImage = document.getElementById("gamesLink");
 linkToImage.src = findingDaysIcon();
+
+
+var nameInput = document.getElementById("nameInput");

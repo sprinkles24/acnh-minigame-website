@@ -31,6 +31,10 @@ img {
   width: 10em;
 }
 
+.leftAlign {
+  text-align: left;
+}
+
 .dottedUnderline {
   color: black;
   text-decoration: none;
@@ -42,20 +46,44 @@ img {
 #games {
   display: flex;
   flex-direction: row;
-  margin: auto;
+  flex-wrap: wrap;
+  margin-top: 2em;
+  margin-right: 25%;
+  margin-bottom: auto;
+  margin-left: 25%;
   padding: auto;
+  width: 50%;
 }
 
 #games > div {
   margin: auto;
-}
-
-#tracker_button {
   display: flex;
   flex-direction: column;
   text-align: center;
-
 }
+
+#games > div > a > img {
+  transition-property: transform;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+}
+
+#games > div > a > img:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+#quiz {
+  display: flex;
+  flex-direction: column;
+}
+
+#quiz > div {
+  margin-left: 5%;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+
 
 .bubblyFont {
   font-family: "Sour Gummy", "Times";
@@ -73,9 +101,16 @@ img {
   font-style: normal;
 }
 
-.serifFont.thick {
+.serifFont.slightThick {
   font-family: "Source Serif 4", serif;
   font-optical-sizing: auto;
   font-weight: 500;
+  font-style: normal;
+}
+
+.serifFont.thick {
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
   font-style: normal;
 }
