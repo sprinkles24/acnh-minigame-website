@@ -31,6 +31,11 @@ img {
   width: 10em;
 }
 
+button {
+  background-color: #fff9e5;
+  border-width: 0.05em;
+}
+
 
 
 .leftAlign {
@@ -87,8 +92,6 @@ img {
 }
 
 .material-symbols-outlined {
-  background-color: #fff9e5;
-  border-width: 0.05em;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
@@ -114,7 +117,7 @@ img {
 }
 
 .quizEmoji {
-  
+  display: none;
 }
 
 
