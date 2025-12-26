@@ -28,4 +28,20 @@ const linkToImage = document.getElementById("gamesLink");
 linkToImage.src = findingDaysIcon();
 
 
-var nameInput = document.getElementById("nameInput");
+function nameSubmitted() {
+    var nameInput = document.getElementById("nameInput").value;
+
+    const q1_a = document.getElementById("q1-a"); // LAZY
+    q1_a.textContent = "a. From " + nameInput + "'s tummy!";
+
+    const q1_b = document.getElementById("q1-b"); // JOCK
+    q1_b.textContent = "b. Letter-writing FLEX! -" + nameInput;
+
+    const q1_c = document.getElementById("q1-c"); // CRANKY
+    q1_c.textContent = "c. Now get to work! -" + nameInput;
+
+}
+
+function checkAnswers() {
+    
+}
